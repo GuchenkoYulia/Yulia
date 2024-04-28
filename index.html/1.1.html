@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Form</title>
+    <style>
+        body {
+            background-color: #e6f0ff; /* блідно-блакитна основа */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+        .container {
+            background-color: #83cece; /* юлакитний колір тіла */
+            padding: 100px;
+            width: 600px; /* збільшуємо ширину контейнера */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+     
+        .stripe {
+            background-color: #e67e22; /* моркв'яний колір полоски */
+            height: 50px;
+            width: 80%; /* збільшуємо ширину полоски */
+            position: absolute;
+            /* top: -15px; */
+            top: 25px;
+            left: -5%; /* зміщуємо полоску вліво на 10% ширини */
+            text-align: center;
+            color: #fff;
+            line-height: 50px;
+            font-weight: bold;
+            z-index: 1; /* піднімаємо полоску над іншими елементами контейнера */
+        }
+
+
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .form-group label {
+            color: #5a5656;
+            display: block;
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            width: 50%;
+            padding: 10px;
+            border: 0px solid rgba(0, 0, 0, 0.2);
+            border-bottom: 4px solid rgba(0, 0, 0, 0.5); /* тінь нижче */
+            background-color: #8bdada; /* колір для інпутів */
+            color: #000;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        .image-container {
+            position: absolute;
+            bottom: -50px;
+            right: -120px;
+            width: 512px;
+            height: 512px;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="stripe">CREDIT CARD DETAILS</div>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9101 1121">
+            </div>
+            <div class="form-group">
+                <label for="nameOnCard">Name On Card</label>
+                <input type="text" id="nameOnCard" name="nameOnCard" placeholder="Name Surname">
+            </div>
+            <div class="form-group">
+                <label>Expiry Date</label>
+                <div style="display: flex;">
+                    <input type="text" id="expiryMonth" name="expiryMonth" placeholder="M" style="width: 40px;">
+                   
+                    <input type="text" id="expiryYear" name="expiryYear" placeholder="Y" style="width: 40px; margin-left: 10px;">
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV / CVN" style="width: 100px; margin-left: auto;">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV / CVN</label>
+                <input type="password" id="cvv" name="cvv" placeholder="***">
+            </div>
+            <!-- <button type="submit">Submit</button> -->
+        </form>
+        <div class="image-container">
+            <img src="img/moon_flag.png" alt="Моя картинка">
+        </div>
+    </div>
+</body>
+</html>
+
