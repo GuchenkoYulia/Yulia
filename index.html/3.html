@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="css.to.3.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registration form</h1>
+    <div class="form-wrapper">
+      <div class="registration-form">
+        <div class="form-group">
+          <label for="username">
+
+     <!-- Замініть це на іконку користувача -->
+            <span><img src="img/username.png" alt="Username"></span> Username: 
+          </label>
+          <input type="text" id="username" name="username" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">
+            <!-- Замініть це на іконку електронної пошти -->
+            <span><img src="img/email.png" alt="Email"></span> Email address:
+          </label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address">
+        </div>
+        <div class="form-group">
+          <label for="password">
+            <!-- Замініть це на іконку замка -->
+            <span><img src="img/pswd.png" alt="Password"></span> Password:
+          </label>
+          <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">
+            <!-- Замініть це на іконку замка -->
+            <span><img src="img/pswd.png" alt="Confirm password"></span> 
+          </label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+        </div>
+      </div>
+
+      
+
+      <div class="personal-details">
+        <h1>Personal details</h1>
+        <span><img src="img/avatar_1.png" alt="Username"></span>
+        <div class="form-group">
+          <input type="text" id="first-name" name="first-name" placeholder="First name">
+        </div>
+        <div class="form-group">
+          <input type="text" id="last-name" name="last-name" placeholder="Last name">
+        </div>
+        <div class="form-group">
+          <h2><label for="gender">Male</label></h2>
+          <span><img src="img/avatar_3.png" alt="Username"></span>
+          <span><img src="img/avatar_4.png" alt="Username"></span>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          
+          <h2><label for="dob">mm / dd / yyyy</label></h2>
+          <span><img src="img/checkbox_26.png" alt="date"></span>
+          <input type="date" id="dob" name="dob">
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <label for="newsletter">I want to receive news and special offers</label>
+    </div>
+
+    <div class="form-group">
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I agree with the Terms and Conditions</label>
+    </div>
+
+    <hr>
+    <span><img src="img/valid.png" alt="date"></span>
+    <p><b>Press submit:</b></p>
+    <p><button type="submit" class="submit-btn">SUBMIT</button></p>
+    
+    
+  </div>
+</body>
+</html>
