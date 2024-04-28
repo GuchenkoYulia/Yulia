@@ -1,0 +1,92 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #e0dcdc; */
+    background-image: url('img/mramor.jpg');
+    background-size: cover; /* Розмір фону */
+    background-repeat: no-repeat; /* Заборонити повторення фону */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 10px  auto;
+    padding: 40px;
+    background-color: #dae7e0;
+    /* background-color: ; */
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 10px rgba(0.1, 0.1, 0.1, 0.1);
+  
+  }
+  
+  h1, h2 {
+    /* text-align: center; */
+    text-align: left;
+
+  }
+  
+  .form-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .registration-form {
+    flex-basis: 50%;
+  }
+
+
+  .personal-details {
+    flex-basis: 40%;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+   
+    
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 10px rgba(0.1, 0.1, 0.1, 0.1);
+    box-sizing: border-box;
+  }
+
+
+  .submit-btn {
+    
+    background-color: #4cafa7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    box-shadow: 10px 10px 10px 10px rgba(0.1, 0.1, 0.1, 0.1);
+   
+  }
+  
+  /* Адаптивність для екранів шириною менше 600px */
+  @media (max-width: 599px) {
+    .form-wrapper {
+      flex-direction: column;
+    }
+  
+    .registration-form,
+    .personal-details {
+      flex-basis: 100%;
+    }
+  }
