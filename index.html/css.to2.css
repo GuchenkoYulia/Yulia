@@ -1,0 +1,193 @@
+/* Inputs */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+/* input {
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+  } */
+
+  input {
+    padding: 5px 10px 5px 5px; /* Додатковий відступ справа для зображення */
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    background-repeat: no-repeat; /* Не повторювати зображення */
+    background-position: right 2px center; /* Позиція зображення */
+  }
+  
+  input.valid {
+    border-color: green;
+    background-image: url('img/valid2.png'); /* Шлях до зображення галочки */
+  }
+  
+  input.invalid {
+    border-color: red;
+    background-image: url('img/invalid2.png'); /* Шлях до зображення хрестика */
+  }
+  
+  /* Checkboxes */
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 30px;
+    height: 16px;
+    border: 0px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: green;
+  }
+  
+  input[type="checkbox"]:not(:checked) {
+    background-color: #f31616;
+  }
+  
+  /* Radio buttons */
+  input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 0px solid #9b9898;
+    border-radius: 50%;
+    
+    outline: none;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: green;
+  }
+  
+  input[type="radio"]:not(:checked) {
+    background-color: #ccc8c8;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 5px 10px;
+    border: 0px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button.active {
+    background-color: green;
+    color: #fff;
+  }
+  
+  button.hover {
+    background-color: rgb(139, 0, 0);
+    color: #fff;
+  }
+  
+  button.danger {
+    background-color: red;
+    color: #fff;
+  }
+  
+  .button-container button.hover:nth-of-type(2) {
+    background-color: rgb(2, 88, 2);
+  }
+  
+  button.disabled {
+    background-color: #9e9b9b;
+    color: #ffffff;
+    cursor: not-allowed;
+  }
+  
+  /* Round buttons */
+  button.round {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    
+  }
+  
+  button.round.active {
+    background-color: green;
+    color: #fff;
+  }
+  
+  button.round.danger {
+    background-color: red;
+    color: #fff;
+  }
+  
+  /* Buttons */
+  /* button {
+    padding: 5px 10px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button.active {
+    background-color: green;
+    color: #fff;
+  }
+  
+  button.hover {
+    background-color: darkgreen;
+    color: #fff;
+  }
+  
+  button.danger {
+    background-color: red;
+    color: #fff;
+  }
+  
+  button.disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  } */
+  
+  /* Round buttons */
+  /* button.round {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button.round.active {
+    background-color: green;
+    color: #fff;
+  }
+  
+  button.round.danger {
+    background-color: red;
+    color: #fff;
+  } */
+  
+  /* Textarea */
+  textarea {
+    padding: 30px;
+    margin: 0px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    /* resize: vertical; */
+    resize: horizontal;
+  }
